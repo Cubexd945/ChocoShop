@@ -33,15 +33,16 @@
                 <p class="texto-footer">© 2023 ChocoShop Coder</p>
             </footer>
         </aside>
+
         <main>
             <h2 class="titulo-principal">Carrito</h2>
             <div class="contenedor-carito">
-                <p class="carrito-vacio">Tú carrito esta vacío</p>
+                <p class="carrito-vacio">Tu carrito se encuentra vacío</p>
 
-                <div class="carrito-productos">
+                <div class="carrito-productos disabled">
 
                     <div class="carrito-producto">
-                        <img src="./img/abrigos/01.jpg" alt="">
+                        <img class="carrito-producto-imagen" src="./img/abrigos/01.jpg" alt="">
                         <div class="carrito-producto-nombre">
                             <small>Título</small>
                             <h3>Abrigo 01</h3>
@@ -66,7 +67,7 @@
                     </div>
 
                     <div class="carrito-producto">
-                        <img src="./img/abrigos/02.jpg" alt="">
+                        <img class="carrito-producto-imagen" src="./img/abrigos/02.jpg" alt="">
                         <div class="carrito-producto-nombre">
                             <small>Título</small>
                             <h3>Abrigo 02</h3>
@@ -86,24 +87,24 @@
                             <small>Subtotal</small>
                             <p>₡15000</p>
                         </div>
-
                         <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
                     </div>
+                </div>
+                <div class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
 
-                    <div class="carrito-acciones">
-                        <div class="carrito-acciones-izquierda">
-                            <button class="carrito-acciones-vaciar">Vaciar carrito</button>
-                        </div>
-                        <div class="carrito-acciones-derecha">
-                           <div class="carrito-acciones-total">
-                            <p>Total</p>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p class="total">Total:</p>
                             <p id="total">₡30000</p>
-                           </div>
-                        <button class="carrito-acciones-comprar">Comprar ahora</button>
                         </div>
+                        <button class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
-            </div>    
+                <p class="carrito-comprado disabled">Gracias por comprar en ChocoShop</p>
+            </div>
         </main>
     </div>
 
